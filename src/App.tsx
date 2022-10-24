@@ -1,13 +1,15 @@
 import { FC } from 'react'
 import styled from 'styled-components'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { TotalPopulation } from './components/TotalPopulation'
 
+const queryClient = new QueryClient()
 const App: FC = () => {
   return (
     <Wrap className="App">
-      <Title>都道府県別の総人口推移グラフ</Title>
-      <section>
-        <h2>都道府県</h2>
-      </section>
+      <QueryClientProvider client={queryClient}>
+        <TotalPopulation />
+      </QueryClientProvider>
     </Wrap>
   )
 }
@@ -16,9 +18,4 @@ export default App
 
 const Wrap = styled.div`
   padding: 0 1rem;
-`
-
-const Title = styled.h1`
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
 `
