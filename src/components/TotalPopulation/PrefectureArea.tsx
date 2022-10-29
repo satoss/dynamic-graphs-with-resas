@@ -1,9 +1,9 @@
 import { FC } from 'react'
 import styled from 'styled-components'
-import type { Prefs } from './'
+import type { PrefSelection } from './'
 
 interface Props {
-  prefs: Prefs
+  prefs: PrefSelection[]
   onChangePrefs: (event: React.ChangeEvent<HTMLInputElement>) => void
   disabled: boolean
 }

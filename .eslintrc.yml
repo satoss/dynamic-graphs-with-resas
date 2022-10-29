@@ -12,7 +12,10 @@ parserOptions:
   project: ./tsconfig.json
 plugins:
   - react
-rules: { react/react-in-jsx-scope: off }
+rules: { 
+  '@typescript-eslint/array-type': off,
+  'react/react-in-jsx-scope': off
+ }
 settings: { react: { version: detect } }
 ignorePatterns:
   - vite.config.ts
