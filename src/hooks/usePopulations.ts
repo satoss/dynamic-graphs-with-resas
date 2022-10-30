@@ -20,6 +20,7 @@ export const usePopulations = ({ prefs, params }: Params): { populations: any[];
           console.log(e)
         }
       },
+      staleTime: Infinity,
       select: (json: any) => ({ prefCode, prefName, population: json.result.data[0].data }),
     })),
   })

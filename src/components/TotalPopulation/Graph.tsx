@@ -24,7 +24,7 @@ interface Props {
   isLoading: boolean
 }
 
-export const GraphArea: FC<Props> = ({ populations, isLoading }) => {
+export const Graph: FC<Props> = ({ populations, isLoading }) => {
   const options = {
     responsive: true,
     plugins: {

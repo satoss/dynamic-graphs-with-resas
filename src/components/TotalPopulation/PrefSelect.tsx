@@ -8,7 +8,7 @@ interface Props {
   disabled: boolean
 }
 
-export const PrefectureArea: FC<Props> = ({ prefs, onChangePrefs, disabled }) => {
+export const PrefSelect: FC<Props> = ({ prefs, onChangePrefs, disabled }) => {
   return (
     <Container>
       <legend>
