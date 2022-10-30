@@ -31,7 +31,6 @@ export const TotalPopulation: FC = () => {
       </Loading>
     )
   }
-
   return (
     <>
       <h1>都道府県別の総人口推移グラフ</h1>
